@@ -1,17 +1,20 @@
 from setuptools import setup,find_packages
 
+with open("README.md",'r') as fh:
+    long_description = fh.read()
 setup(
     name='darn',
     version='0.1.1',    
     description='Easy remote and local code execution',
     url='https://github.com/AmitSrourDev/darn',
-    py_modulkels=["local"],
+    py_modulkels=["darn"],
     package_dir={'':'app'},
-    #packages=find_packages(),
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author='Amit Srour',
     author_email='amitsrourdev@gmail.com',
     license='BSD 2-clause',
-    # packages=['pyexample'],
+    # packages=['pyexample'],s
     # install_requires=['mpi4py>=2.0',
     #                   'numpy',                     
     #                   ],
