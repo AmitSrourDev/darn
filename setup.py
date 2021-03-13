@@ -2,10 +2,12 @@ from setuptools import setup,find_packages
 
 setup(
     name='darn',
-    version='0.1.0',    
+    version='0.1.1',    
     description='Easy remote and local code execution',
     url='https://github.com/AmitSrourDev/darn',
-    packages=find_packages(),
+    py_modulkels=["local"],
+    package_dir={'':'app'},
+    #packages=find_packages(),
     author='Amit Srour',
     author_email='amitsrourdev@gmail.com',
     license='BSD 2-clause',
